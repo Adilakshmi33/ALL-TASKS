@@ -1,0 +1,11 @@
+body {
+    background-image: url("../cssday5/resumepic1.jpg") no-repeat ;
+    background-size: contain;
+    background-size: cover;
+    border-style: solid skyblue;
+}
+    
+div {
+    columns: 2;
+}
+
