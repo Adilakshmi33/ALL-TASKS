@@ -1,0 +1,35 @@
+body {
+    background: url("../cssday6/portpoliopic2.webp") no-repeat;
+    background-size: contain;
+    background-size: cover;
+    
+}
+nav{
+    text-align: right;
+    
+}
+a{
+    color: beige;
+    font-size: x-large;
+    text-align: right;
+}
+div{
+    padding: 200px;
+}
+p{
+
+    font-weight: bold;
+    color: beige;
+    font-size: x-large;
+}
+img{
+    border-radius: 50%;
+    float: right;
+    margin: 250px 500px 0px 0px;
+}
+i{
+
+    font-size: 50px;
+    color: aliceblue;
+}
+
