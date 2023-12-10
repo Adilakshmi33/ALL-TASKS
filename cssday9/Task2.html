@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Document </title>
+        <link rel="stylesheet" href="../cssday9/Task2.css" />
+    </head>
+    <body>
+        <h1> REGISTRATION FORM </h1>
+        <form> 
+        <fieldset> 
+            <legend> <b> Basic Information </b> </legend>
+            <label for="Full Name"> Full Name </label> <br/> 
+            <input type="text" placeholder="First Name" minlength="0" maxlength="10" required /> &nbsp;
+            <input type="text" placeholder="Middle Name" required />&nbsp;
+            <input type="text" placeholder="Last Name" minlength="0" maxlength="11" required /> <br/> <br/>
+            <label for="Email"> Email </label>  <br/> 
+            <input type="Email" placeholder="ex: myname@example.com" required /> <br/> <br/>
+            <label for="Mobile Number"> Mobile Number </label> <br/>
+            <input type="text" placeholder="e.g.1234567891" required pattern="[0-9]{10}" /> <br/> <br/>
+            <label for="Age"> Age </label> <br/> 
+            <input type="number" placeholder="age" min="18" /> <br/> <br/>
+            <label for="Gender"> Gender </label> <br/>
+            <input type="radio" id="Male" name="Genger"/>
+            <label for="Male"> Male </label>
+            <input type="radio" id="Female" name="Genger"/>
+            <label for="Female"> Female </label> <br/><br/>
+            <label for="Date of birth"> Date of birth </label> <br/>
+            <input type="date"  min="2000-01-02" max="2003-01-03" /> <br/> <br/>
+            <label for="Technical Skills"> Technical Skills </label> <br/> 
+            <input list="Technical Skills" name="Technical Skills" />
+            <datalist id="Technical Skills" >
+            <option value="HTML"> HTML </option>
+            <option value="CSS"> CSS </option>
+            <option value="JS"> JS </option>
+            </datalist> <br/> <br/>
+            <label for="Soft Skills"> Soft Skills </label> <br/> 
+            <input list="Soft Skills" name="Soft Skills" />
+            <datalist id="Soft Skills" >
+            <option value="Communication"> </option>
+            <option value="Leadership"> </option>
+            <option value="Problem solvning"> </option>
+            </datalist> <br/> <br/>
+            <label for="Languages Known"> Languages Known </label> <br/>
+            <input type="checkbox" />
+            <label for="Telugu">Telugu</label> <br/>
+            <input type="checkbox" />
+            <label for="English">English</label> <br/>
+            <input type="checkbox" />
+            <label for="Tamil">Tamil</label> <br/>
+            <input type="checkbox" />
+            <label for="Hindi">Hindi</label> <br/> <br/>
+            <label for="Communication Skills">Communication Skills</label> <br/>
+            <input type="range" min="0" max="10" <br/> <br/>
+            <label for="Upload Resume"> Upload Resume </label> <br/>
+            <input type="file" /> <br/> <br/>
+            </fieldset> <br/>
+            <br/>
+            <label for="Briefly Indroduce Yourself"> Briefly Indroduce Yourself </label> <br/> 
+            <textarea name="Briefly Indroduce Yourself" id="Briefly Indroduce Yourself" cols="50" rows="15" maxlength="200"> </textarea> <br/> <br/> 
+            <p><center> <input type="Submit" formaction="../cssday9/Registration.html" target="_blank" /> </center> </p>
+            <a href="" target="_blank">reset </a> <br/> <br/>
+        </form>
+    </body>
+</html>
+    
