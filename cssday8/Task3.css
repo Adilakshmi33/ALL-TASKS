@@ -1,0 +1,34 @@
+body {
+    background-color: aliceblue;
+    background-size: contain;
+    background-size: cover;
+}
+input:required {
+    background-color: crimson;
+}
+legend:hover {
+    color: blue;
+
+}
+textarea:hover {
+    background-color: blue;
+}
+label:hover {
+    color: chartreuse;
+}
+a:hover {
+    color: deeppink;
+}
+input:optional {
+    background-color: darkgreen;
+}
+h1:hover {
+    background-color: deeppink;
+}
+h1 {
+    color: darkblue;
+}
+fieldset {
+    color: crimson;
+    padding: 10px;
+}

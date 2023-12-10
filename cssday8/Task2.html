@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,td,th{
+            border: solid;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <h1> What are Pseudo-classes </h1>
+    For example, it can be used to: <br/>
+    <ul>
+        <li>Style an element when a user mouses over it</li>
+        <li>Style visited and unvisited links differently</li>
+        <li>Style an element when it gets focus</li>
+    </ul>
+    <h2> Syntax </h2>
+    The syntax of pseudo-classes: <br/>
+    &nbsp;&nbsp;&nbsp;&nbsp;selector:pseudo-class { <br/>
+        &nbsp;&nbsp;&nbsp;&nbsp;property: value;<br/>
+
+    } <br/> <br/>
+    <table>
+        <tr>
+            <th>Selector</th>
+            <th>Example</th>
+            <th>Example description</th>
+        </tr>
+        <tr>
+            <td>:active</td>
+            <td>a:active</td>
+            <td>Selects the active link</td>
+        </tr>
+        <tr>
+            <td>:first-child</td>
+            <td>p:first-child</td>
+            <td>Selects every &ltp&gt elements that is the first child of its parent</td>
+        </tr>
+        <tr>
+            <td>:hover</td>
+            <td>a:hover</td>
+            <td>Selects links on mouse over</td>
+        </tr>
+        <tr>
+            <td>:invalid</td>
+            <td>input:invalid</td>
+            <td>Selects all &ltinput&gt elements with an invalid value</td>
+        </tr>
+        <tr>
+            <td>:last-child</td>
+            <td>p:last-child</td>
+            <td>Selects every &ltp&gt elements that is the last child of its parent</td>
+        </tr>
+        <tr>
+            <td>:link</td>
+            <td>a:link</td>
+            <td>Selects all unvisited links</td>
+        </tr>
+        <tr>
+            <td>:nth-child(n)</td>
+            <td>p:nth-child(2)</td>
+            <td>Selects every &ltp&gt element that is the second child of its parent</td>
+        </tr>
+        <tr>
+            <td>:nth-last-child(n)</td>
+            <td>p:nth-last-child(2)</td>
+            <td>Selects every &ltp&gt element that is the second child of its parent, counting from the last child</td>
+        </tr>
+        <tr>
+            <td>:required</td>
+            <td>input:required</td>
+            <td>Selects &ltinput&gt elements with a "required" attribute specified</td>
+        </tr>
+    </table>
+</body>
+</html>
