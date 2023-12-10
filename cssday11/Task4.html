@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-image: url(../cssday11/windows\ background.jpg);
+        }
+        #box1 {
+            border: solid 2px;
+            text-align: center;
+            display: inline-block;
+            height: 40px;
+            width: 50px;
+            position: absolute;
+            margin: 300px 0px 0px 500px;
+            background-color: red;
+            animation: colochange 6s 2s linear infinite;
+        }
+        #box2 {
+            border: solid 2px;
+            text-align: center;
+            display: inline-block;
+            height: 40px;
+            width: 50px;
+            position: absolute;
+            margin: 300px 0px 0px 560px;
+            background-color: green;
+            animation: colochange 6s 2s linear infinite;
+        }
+        #box3 {
+            border: solid 2px;
+            text-align: center;
+            display: inline-block;
+            height: 40px;
+            width: 50px;
+            position: absolute;
+            margin: 350px 0px 0px 500px;
+            background-color: blue;
+            animation: colochange 6s 2s linear infinite;
+        }
+        #box4 {
+            border: solid 2px;
+            text-align: center;
+            display: inline-block;
+            height: 40px;
+            width: 50px;
+            position: absolute;
+            margin: 350px 0px 0px 560px;
+            background-color: yellow;
+            animation: colochange 6s 2s linear infinite;
+        }
+        #windows11 {
+            display: inline-block;
+            height: 40px;
+            width: 50px;
+            position: absolute;
+            margin: 330px 0px 0px 640px;
+            color: aliceblue;
+            font-size: xx-large;
+        }
+        #windows11:hover {
+            transform: scalex(2);
+        }
+        @keyframes colochange{
+            from {
+
+            }
+            to {
+                background-color: antiquewhite;
+            }
+        }
+        </style>
+</head>
+<body>
+    <div id="windows">
+        <div id="box1"></div>
+        <div id="box2"></div>
+        <div id="box3"></div>
+        <div id="box4"></div>
+        <div id="windows11">Windows11</div>
+    </div>
+</body>
+</html>
