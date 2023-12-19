@@ -1,0 +1,35 @@
+* {
+    background-color: black;
+}
+#container1 {
+    display: flex;
+    justify-content: space-around;
+    color: antiquewhite;
+}
+#prime a{
+    text-decoration: none;
+    color: #ffffff;
+}
+#live a{
+    text-decoration: none;
+    color: #ffffff;
+}
+#container1 a {
+    color: antiquewhite;
+}
+#dropdownlist {
+    display: block;
+    display: none;
+}
+#dropdownlist a {
+    text-decoration: none;
+}
+.dropdown:hover #dropdownlist {
+    display: block;
+}
+i {
+    font-size: 20px;
+}
+#tryforfree a {
+    text-decoration: none;
+}
