@@ -1,0 +1,134 @@
+#container {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto auto auto auto;
+}
+header {
+    grid-column: 1/3;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: space-evenly;
+}
+header input {
+    width: 500px;
+    height: 50px;
+    margin-top: 10px;
+}
+header i {
+    color: deeppink;
+    margin-top: 20px;
+}
+section {
+    grid-column: 1/3;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: space-evenly;
+}
+h1 {
+    font-size: x-large;
+    color: blue;
+}
+h2 {
+    background-color: aliceblue;
+    grid-column: 1/3;
+}
+b {
+    font-size: x-large;
+}
+.first {
+    grid-column: 1/3;
+    display: inline-block;
+    text-align: center;
+    width: 250px;
+    border: solid 2px;
+    margin-left: 10px;
+}
+.third {
+    grid-column: 1/3;
+    display: inline-block;
+    text-align: center;
+    width: 250px;
+    border: solid 2px;
+    margin-left: 10px;
+}
+.second {
+    grid-column: 2/3;
+    display: inline-block;
+    margin-left: 30px;
+}
+.four {
+    border: solid 2px;
+    display: inline-block;
+    width: 250px;
+    text-align: center;
+    position: relative;
+}
+.five {
+    display: inline-block;
+    text-align: center;
+    position: absolute;
+    margin-left: 40px;
+}
+footer {
+    background-color: navy;
+    color: antiquewhite;
+}
+#first {
+    margin-left: 10px;
+    position:relative;
+    display: inline-block;
+}
+#second {
+    margin-left: 100px;
+    position: relative;
+    display: inline-block;
+}
+#third {
+    margin-left: 100px;
+    position: relative;
+    display: inline-block;
+}
+#four {
+    margin-left: 100px;
+    position: relative;
+    display: inline-block;
+}
+#five {
+    margin-left: 100px;
+    position: relative;
+    display: inline-block;
+    text-transform: capitalize;
+}
+#six {
+    display: flex;
+    justify-content: space-evenly;
+}
+#first a {
+    text-decoration: none;
+    color: antiquewhite;
+}
+#second a {
+    text-decoration: none;
+    color: antiquewhite;
+}
+#third a {
+    text-decoration: none;
+    color: antiquewhite;
+}
+#four a {
+    text-decoration: none;
+    color: antiquewhite;
+}
+#five a {
+    text-decoration: none;
+    color: antiquewhite;
+}
+#six a {
+    text-decoration: none;
+    color: antiquewhite;
+}
+select {
+    width: 15px;
+    height: 15px;
+    
+}
