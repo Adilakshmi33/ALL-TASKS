@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+        body {
+            background: url("weather\ bg.jpg") no-repeat;
+            background-size: contain;
+            background-size: cover;
+        }
+        h1 {
+            color: antiquewhite;
+            margin-left: 520px;
+            margin-top: 40px;
+        }
+        h1:hover {
+            color: #0ef;
+        }
+        .weather1 #bg1 img {
+            position: absolute;
+            margin: 40px 0px 0px 530px;
+        }
+        .weather1 #bg2 img {
+            position: absolute;
+            margin: 280px 0px 0px 530px;
+        }
+        .weather2 #text1 img {
+            position: absolute;
+            margin: 20px 0px 0px 540px;
+            border-radius: 50%;
+        }
+        .weather2 #text2 img {
+            position: absolute;
+            margin: 60px 0px 0px 540px;
+            border-radius: 40%;
+        }
+        .weather2 #text3 {
+            position: absolute;
+            margin: 60px 0px 0px 800px;
+            font-size: x-large;
+            color: orangered;
+        }
+        .weather2 #text4 {
+            position: absolute;
+            margin: 200px 0px 0px 540px;
+        }
+        #text4 b {
+            font-size: 25px;
+        }
+        #text4 i {
+            font-size: 15px;
+        }
+        h5 {
+            margin: 290px 0px 0px 720px;
+            position: absolute;
+        }
+        #img {
+            position: absolute;
+            margin: 350px 0px 0px 140px;
+            justify-content: space-around;
+            display: flex;
+        }
+        h6 {
+            position: absolute;
+            margin: 470px 0px 0px 540px;
+            color: #0ef;
+            font-size: x-large;
+        }
+        #dropdown {
+            display: inline-block;
+            position: absolute;
+            margin: 470px 0px 0px 605px;
+            color: #0ef;
+        }
+    </style>
+</head>
+<body>
+    <h1>Regular Weather Report</h1>
+    <div class="weather1">
+        <p id="bg1"><img src="../jsday2/5.jpg" alt="5" height="250px" width="350px"></p>
+        <p id="bg2"><img src="../jsday2/3.jpg" alt="3" height="250px" width="350px"></p>
+    </div>
+    <div class="weather2">
+        <p id="text1"><img src="../jsday2/2.jpg" alt="2" height="70px" width="70px"/></p>
+        <p id="text2"><img src="../jsday2/1.jpg" alt="2" height="70px" width="90px"/></p>
+        <p id="text3">28<sup>o</sup>c<br/><b style="color: deeppink;">Ongole</b></p>
+        <p id="text4"><b>10:51:48</b><br/><i>Thursday, December 12,2023</i></p>
+    </div>
+    <h5>Today's Weather</h5>
+    <div class="container text-center" id="img">
+        <div class="row justify-content-start">
+          <div class="col-2">
+            10Am<br/>
+            <img src="../jsday2/6.jpg" alt="6" height="30px" width="30px" /><br/>
+            20<sup>o</sup>
+          </div>
+          <div class="col-2">
+            11Am<br/>
+            <img src="../jsday2/6.jpg" alt="6" height="30px" width="30px" /><br/>
+            22<sup>o</sup>
+          </div>
+          <div class="col-2">
+            1PM<br/>
+            <img src="../jsday2/7.png" alt="7" height="30px" width="30px" /><br/>
+            24<sup>o</sup>
+          </div>
+          <div class="col-2">
+            2Pm<br/>
+            <img src="../jsday2/9.jpeg" alt="9" height="30px" width="30px" /><br/>
+            23<sup>o</sup>
+          </div>
+          <div class="col-2">
+            3PM<br/>
+            <img src="../jsday2/9.jpeg" alt="9" height="30px" width="30px" /><br/>
+            22<sup>o</sup>
+          </div>
+          <div class="col-2">
+            3PM<br/>
+            <img src="../jsday2/9.jpeg" alt="9" height="30px" width="30px" /><br/>
+            22<sup>o</sup>
+          </div>
+        </div>
+    </div>
+    <h6>Week</h6>
+    <div class="dropdown" id="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+        </button>
+    </div>
+</body>
+</html>
+    
