@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+    <h3>JavaScript Data Types</h3>
+    <p>Javascript has 8 datatypes</p>
+    <dl>
+        <dt>1. Number</dt>
+        <dd><ul>
+            <li>All JavaScript numbers are stored as decimal numbers (floating point).</li>
+            <li>Numbers can be written with, or without decimals:</li>
+            <li> Example:<br/>With decimals:<br/>
+                    let x1 = 34.00; <br/>
+                    Without decimals: <br/>
+                    let x2 = 34;
+            </li>
+            </ul>
+        </dd>
+        <dt>2. Bigint</dt>
+        <dd><ul>
+            <li>All JavaScript numbers are stored in a a 64-bit floating-point format.</li>
+            <li>JavaScript BigInt is a new datatype that can be used to store integer values that are too big to be represented by a normal JavaScript Number.</li>
+            <li>Example:<br/>x = BigInt("123456789012345678901234567890");</li>
+            </ul>
+        </dd>
+        <dt>3. String</dt>
+        <dd><ul>
+            <li>A string is a group of characters.<li>
+            <li>Strings are written with quotes. use single or double quotes:</li>
+            <li>Example:<br/>
+                     Using double quotes:<br/>
+                     carName1 = "Volvo XC60";<br/>
+                     Using single quotes:<br/>
+                     carName2 = 'Volvo XC60';
+            </li>
+            </ul>
+        </dd>
+        <dt>4 . Boolean</dt>
+        <dd>
+            <ul>
+                <li>Booleans can only have two values: true or false</li>
+                <li>Example:<br/>let x = 5; <br/>
+                                 let y = 5; <br/>
+                                 let z = 6; <br/>
+                                 (x == y)       // Returns true <br/>
+                                 (x == z)       // Returns false
+                </li>
+                <li>Booleans are often used in conditional testing.</li>
+            </ul>
+        </dd>
+        <dt>5. Null</dt>
+        <dd><ul>
+            <li>null is a special value that represents an empty or unknown value.</li>
+            <li>Example:<br/>let number = null; </li>
+            </ul>
+        </dd>
+        
+        <dt>6. Undefined</dt>
+        <dd><ul><li>a variable without a value, has the value undefined. The type is also undefined.</li>
+                <li>Example:<br/>let car;    // Value is undefined, type is undefined</li>
+            </ul>
+        </dd>
+        <dt>7. Symbol</dt>
+        <dd>Symbol is a unique and immutable primitive value that can be used as a key of object property.</dd>
+        <dt>8. Object</dt>
+        <dd>
+            <ul>
+                <li>objects are written with curly braces {}.</li>
+                <li>Object properties are written as name:value pairs, separated by commas.</li>
+                <li>Example:<br/>const person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};</li>
+            </ul>
+        </dd>
+    </dl>
+        <h3>Operators</h3>
+        <h6>1. Arithmetic Operators</h6>
+        <p><b>Arithmetic Operators </b>are used to perform arithmetic on numbers:</p>
+        <table class="table table-bordered table-striped">
+            <tr>
+                <th>Operator</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>+</td>
+                <td>Addition</td>
+            </tr>
+            <tr>
+                <td>-</td>
+                <td>Subtraction</td>
+            </tr>
+            <tr>
+                <td>*</td>
+                <td>Multiplication</td>
+            </tr>
+            <tr>
+                <td>**</td>
+                <td>Exponentiation</td>
+            </tr>
+            <tr>
+                <td>/</td>
+                <td>Division</td>
+            </tr>
+            <tr>
+                <td>%</td>
+                <td>Modulus (Division Remainder)</td>
+            </tr>
+            <tr>
+                <td>++</td>
+                <td>Increment</td>
+            </tr>
+            <tr>
+                <td>--</td>
+                <td>Decrement</td>
+            </tr>
+        </table>
+    
+    
+</body>
+</html>
