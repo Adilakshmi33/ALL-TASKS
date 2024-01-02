@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // print *
+        //       **
+        //       ***
+        //       ****
+        //       ******
+
+        var n=5;
+        for(var i=1;i<=n;i++){
+            var line="";
+            for(var j=1;j<=i;j++){
+                line+="*";
+        }
+        console.log(line);
+        }
+
+        // print *****
+        //       ****
+        //       ***
+        //       **
+        //       *
+
+        var n=5;
+        for(var i=4;i>=1;i--){
+            var line="";
+            for(var j=1;j<=i;j++){
+                line+="*";
+        }
+        console.log(line);
+        }
+
+        // object methods
+        // display emp details & each prop value
+        var emp={
+            id:402,
+            name:'Adilakshmi',
+            gender:female,
+            phonenumber:null,
+        }
+        console.log(emp);
+        console.log(emp.name);
+        console.log(emp.id);
+        console.log(emp.name);
+        console.log(emp.gender);
+        console.log(emp.phonenumber);
+
+        // change emp id value
+        console.log("Before",emp,emp1);
+        emp.empid=123;
+        console.log("After",emp,emp1);
+        
+
+        // re-assign the values
+        var emp1={color:"blue", ...emp};
+        console.log("Before",emp,emp1);
+        emp.empid=123;
+        console.log("After",emp,emp1);
+
+        // display all the keys
+        console.log(emp.keys(emp));
+                    or
+        for(var keys in emp){
+            console.log(keys);
+        }
+        // display all the values
+        console.log(emp.values(emp));
+                    or
+        for(var values of Object.values(emp)){
+            console.log(values);
+        }
+        // display all the keys & values
+        console.log(emp.entries(emp));
+
+        // freeze--->we can't add a new prop.
+        // can't update,delete or add
+        var emp1=emp.freeze(emp);
+
+
+        // seal----> we can update the values but can't add or delete
+        var emp1=Object.seal(emp);
+        console.log("Before",emp,emp1);
+        emp1.name='honey'; ---> work in seal
+        emp1.age=21; ---> not work in seal
+        delete emp1.name; ---> not work in seal
+        console.log("After",emp,emp1);
+
+
+    </script>
+</body>
+</html>
