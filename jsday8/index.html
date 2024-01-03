@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // task1: diff b/w slice & substring methods
+        var str="Adilakshmi Annapareddy";
+        console.log(str.length);
+        var result=str.slice(0);
+        console.log(result);
+        var result1=str.slice(3,5);
+        console.log(result1);
+        var result2=str.slice(22,1);
+        console.log(result2);-->display empty
+        var result3=str.slice(-4,-2);
+        console.log(result3); ---->allows the -ve values in slice
+        //substring
+        var result4=str.substring(1,4);
+        console.log(result4);
+        var result5=str.slice(22,1);
+        console.log(result5);-->display empty 
+        var result6=str.substring(22,1);
+        console.log(result6);-->swap the values
+        var result7=str.substring(-2,-5);
+        console.log(result7); ---->can't aloow the -ve values in substring
+
+
+        // task2: take a str,display how many characters, lines, words in a str
+        // characters
+        var str="Adilakshmi Annapareddy";
+        var result=str.split(' ');
+        console.log(result.length);
+        // words
+        var result=str.split('');
+        console.log(result.length);
+
+        //task3 convert str-arr, arr-str & str separated with hypens
+        // convert str-arr
+        var str="Adilakshmi Annapareddy";
+        console.log(str.split(''));
+        // convert arr-str
+        var array=[1,2,3,4,5];
+        console.log(array.toString());
+        // separated with hypen
+        var array1=[1,2,3,4,5];
+        console.log(array1.join('-'));
+
+        // task4: Take a phone number as a array add +1 to each digit
+        var n=[9,5,4,2,8,8,9,3,7,8];
+        console.log(n);
+        for(var i=0;i<=n.length-1;i++){
+            var n1=(Number(n[i]))+1
+            console.log(n1);
+        }
+    </script>
+</body>
+</html>
