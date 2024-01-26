@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //task1:-var, let and constant
+        console.log("var: Declares a variable in JavaScript. Variables declared with var are function-scoped and can be hoisted.");
+        console.log("let: Declares a block-scoped variable in JavaScript. It allows reassignment of values.");
+        console.log("const: Declares a block-scoped constant variable in JavaScript. The value cannot be reassigned after initialization.");
+
+
+        // task2:- Array even and odd (using for-of and for-in)
+        // Array even and odd (using for-of)
+        let nums=[1,2,3,4,5,6,7,8,9,10];
+        let even=[];
+        let odd=[];
+        for(var num of nums){
+            if(num%2==0){
+                even.push(num)
+            }
+            else{
+                odd.push(num)
+            }
+        }
+        console.log(even);
+        console.log(odd)
+        // // Array even and odd (using for-in)
+        let Array=[1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+        let even=[];
+        let odd= [];
+        for(let index in Array) {
+        let number = Array[index];
+        if (number % 2 === 0) {
+            even.push(number);
+        } else {
+            odd.push(number);
+        }
+        }
+        console.log("Even numbers:", even);
+        console.log("Odd numbers:", odd);
+
+        
+        // task3:- Reverse array in both predefined and normal 
+        // using predefined method
+        var array=[1,2,3,4,5];
+        array.reverse();
+        console.log(array);
+        // without using predefined method
+        var array1=[1,2,3,4,5];
+        var revarray1=[];
+        for(var i=array1.length-1;i>=0;i--){
+            revarray1.push(array1[i]);
+        }
+        console.log(revarray1);
+
+        
+        // task4:- sorting an array in both(asscending and descending) of numbers and strings
+        // Ascending order(numbers)
+        let numbersArray = [5, 2, 8, 1, 7];
+        let ascendingOrder = numbersArray.slice().sort(function(a, b) {
+            return a - b;
+        });
+        console.log("Ascending Order:", ascendingOrder);
+        // Descending order(numbers)
+        let descendingOrder = numbersArray.slice().sort(function(a, b) {
+            return b - a;
+        });
+        console.log("Descending Order:", descendingOrder);
+        // Ascending order(strings)
+        let stringsArray = ["banana", "apple", "orange", "grape", "kiwi"];
+        let ascendingOrder = stringsArray.slice().sort(function(a, b) {
+        return a > b ? 1 : a < b ? -1 : 0;
+        });
+        console.log("Ascending Order:", ascendingOrder);
+        // Descending order(strings)
+        let descendingOrder = stringsArray.slice().sort(function(a, b) {
+        return a < b ? 1 : a > b ? -1 : 0;
+        });
+        console.log("Descending Order:", descendingOrder);
+
+
+        // task5:-print palindrome or not 
+        var n=121;
+        var rev=0;
+        var pal=n;
+        while(n!=0){
+        r=n%10;
+        rev=rev*10+r;
+        n=Math.floor(n/10);
+        }
+        if(pal==rev){
+        console.log("palindrome");
+        }
+        else{
+        console.log("not a palindrome");
+        }
+    </script>
+</body>
+</html>

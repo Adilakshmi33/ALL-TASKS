@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // task1:- array-print largest and 3rd largest number
+        var array=[5,3,2,1,4];
+        array.sort();
+        console.log(array);
+        console.log("largest number in array",array[array.length-1]);
+        console.log("3 rs largest number in array",array[2]);
+
+        //task2:-array-remove the duplicate elements and print without duplicate elements
+        var Array = [1, 2, 3, 4, 4, 5, 6, 6];
+        var Array1 = [...new Set(Array)];
+        console.log(Array1);
+        // without using predefined method
+        let arrayWithDuplicates = [1, 2, 3, 4, 2, 5, 6, 1, 7, 8, 9, 9, 10];
+        let arrayWithoutDuplicates = [];
+        for (let i = 0; i < arrayWithDuplicates.length; i++) {
+        if (!arrayWithoutDuplicates.includes(arrayWithDuplicates[i])) {
+        arrayWithoutDuplicates.push(arrayWithDuplicates[i]);
+        }
+        }
+        console.log("Array without Duplicates:", arrayWithoutDuplicates);
+        
+        
+        // task3:-2000-2040 print only leap year in array using loop
+        function LeapYears(startYear, endYear) {
+            for (let year = startYear; year <= endYear; year++) {
+                if ((year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0)) {
+                    console.log(year);
+                }
+            }
+        }
+        LeapYears(2000, 2040);
+    </script>
+</body>
+</html>
