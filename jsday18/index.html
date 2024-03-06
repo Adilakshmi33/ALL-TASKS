@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #writetext{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            border: solid 2px navy;
+            border-radius: 5px red;
+        }
+        #showsresult{
+            position: absolute;
+            left: 50%;
+            top: 70%;
+            transform: translate(-50%,-50%);
+        }
+    </style>
+</head>
+<body>
+    <div id="writetext">
+        <textarea cols="50" rows="10" id="words"></textarea>
+    </div>
+    <div id="showsresult">
+        <p id="showdata"></p>
+        <p id="showwordscount"></p>
+        <button onclick="countwords()">Count Char</button>
+    </div>
+    <script>
+        const countwords=()=>{
+            let noc=document.getElementById("words").value.length;
+            let now=document.getElementById("words").value;
+            now=now.match(/\w+/g);
+            now=now.length;
+            document.getElementById("showdata").innerHTML="The Total Characters="+noc;
+            document.getElementById("showwordscount").innerHTML="The Total Words="+now;
+        }
+    </script>
+</body>
+</html>
